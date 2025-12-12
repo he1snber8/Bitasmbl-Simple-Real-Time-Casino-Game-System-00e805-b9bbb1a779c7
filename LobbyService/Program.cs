@@ -1,0 +1,1 @@
+using LobbyService.Hubs;\nvar builder = WebApplication.CreateBuilder(args);\nbuilder.Services.AddSignalR();\n// TODO: register GamesConfig loader from games.json\nvar app = builder.Build();\napp.MapHub<LobbyHub>("/hubs/lobby");\napp.Run();
