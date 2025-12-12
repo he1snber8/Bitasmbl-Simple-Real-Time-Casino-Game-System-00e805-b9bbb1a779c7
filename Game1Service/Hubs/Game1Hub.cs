@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.SignalR;\nnamespace Game1Service.Hubs;\npublic class Game1Hub : Hub {\n  // TODO: track players per tableId, wait for 2 players\n  // TODO: after delayTime, randomly choose winner and notify Lobby via HTTP or SignalR\n}
