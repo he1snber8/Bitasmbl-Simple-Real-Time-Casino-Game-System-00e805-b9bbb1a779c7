@@ -1,0 +1,1 @@
+import React, { useState } from "react";\n// TODO: import pages Login, Lobby, Game\nexport const App = () => {\n  const [token, setToken] = useState<string | null>(null);\n  // TODO: conditional render Login or Lobby/Game based on token and selected table\n  return (<div>Casino App</div>);\n};\nexport default App;
