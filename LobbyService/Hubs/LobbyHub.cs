@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.SignalR;\nnamespace LobbyService.Hubs;\npublic class LobbyHub : Hub {\n  // TODO: methods: CreateTable, JoinTable, ApproveJoin, CancelTable, CancelJoin\n  // TODO: call WalletService via HttpClient when entry fees change\n  // TODO: send lobby updates via Clients.All.SendAsync("LobbyUpdated", ...);\n}
