@@ -1,0 +1,1 @@
+FROM node:20 AS build\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nRUN npm run build\nFROM nginx:alpine\nCOPY --from=build /app/build /usr/share/nginx/html
