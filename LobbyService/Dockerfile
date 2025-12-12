@@ -1,0 +1,1 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base\nWORKDIR /app\nCOPY . .\n// TODO: use publish output in real Dockerfile\nENTRYPOINT ["dotnet", "LobbyService.dll"]
