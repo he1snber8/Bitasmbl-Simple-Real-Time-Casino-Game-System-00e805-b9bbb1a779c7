@@ -1,0 +1,1 @@
+version: "3.9"\nservices:\n  auth-service:\n    build: ./AuthService\n    ports: ["5001:80"]\n  wallet-service:\n    build: ./WalletService\n    ports: ["5002:80"]\n  lobby-service:\n    build: ./LobbyService\n    ports: ["5003:80"]\n  game1-service:\n    build: ./Game1Service\n    ports: ["5004:80"]\n  frontend:\n    build: ./frontend\n    ports: ["3000:80"]
