@@ -1,0 +1,1 @@
+namespace WalletService.Models;\npublic class WalletTransactionRequest {\n  public string PlayerId { get; set; } = string.Empty;\n  public decimal Amount { get; set; }\n  public string CorrelationId { get; set; } = string.Empty;\n}
