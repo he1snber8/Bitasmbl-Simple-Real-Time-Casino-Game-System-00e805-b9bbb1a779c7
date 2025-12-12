@@ -1,0 +1,1 @@
+{\n  "name": "casino-frontend",\n  "dependencies": {\n    "react": "^18",\n    "react-dom": "^18",\n    "@microsoft/signalr": "^8"\n  }\n}
