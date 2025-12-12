@@ -1,0 +1,1 @@
+import * as signalR from "@microsoft/signalr";\nexport const createLobbyConnection = (token: string) => {\n  return new signalR.HubConnectionBuilder()\n    .withUrl("/hubs/lobby", { accessTokenFactory: () => token })\n    .withAutomaticReconnect()\n    .build();\n};
